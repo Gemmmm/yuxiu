@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick=" window.print();">打印</button>
+
+<table class='table table-bordered' id='spec_input_tab'>
+
+    <tr>
+        <td><b>颜色</b></td>
+        <td><b>产品规格</b></td>
+        <td><b>价格</b></td>
+        <td><b>库存</b></td>
+
+    </tr>
+    <tr>
+        <td>图片色</td>
+        <td>1+3+贵</td>
+        <td><input name='item[1_3][price]' class='spec_price' data-id='1_3' value='0'
+                   onkeyup='this.value=this.value.replace(/[^\d.]/g,"")'
+                   onpaste='this.value=this.value.replace(/[^\d.]/g,"")'/></td>
+        <td><input name='item[1_3][store_count]' class='spec_count' data-id='1_3' value='0'
+                   onkeyup='this.value=this.value.replace(/[^\d.]/g,"")'
+                   onpaste='this.value=this.value.replace(/[^\d.]/g,"")'/></td>
+        <td><input type='hidden' name='item[1_3][key_name]' data-id='1_3' value='颜色:图片色 产品规格:1+3+贵 '/></td>
+    </tr>
+    <tr>
+        <td>图片色</td>
+        <td>测试</td>
+        <td><input name='item[1_14][price]' class='spec_price' data-id='1_14' value='0'
+                   onkeyup='this.value=this.value.replace(/[^\d.]/g,"")'
+                   onpaste='this.value=this.value.replace(/[^\d.]/g,"")'/></td>
+        <td><input name='item[1_14][store_count]' class='spec_count' data-id='1_14' value='0'
+                   onkeyup='this.value=this.value.replace(/[^\d.]/g,"")'
+                   onpaste='this.value=this.value.replace(/[^\d.]/g,"")'/></td>
+        <td><input type='hidden' name='item[1_14][key_name]' data-id='1_14' value='颜色:图片色 产品规格:测试'/></td>
+    </tr>
+    <tr>
+        <td>样色</td>
+        <td>1+3+贵</td>
+        <td><input name='item[2_3][price]' class='spec_price' data-id='2_3' value='0'
+                   onkeyup='this.value=this.value.replace(/[^\d.]/g,"")'
+                   onpaste='this.value=this.value.replace(/[^\d.]/g,"")'/></td>
+        <td><input name='item[2_3][store_count]' class='spec_count' data-id='2_3' value='0'
+                   onkeyup='this.value=this.value.replace(/[^\d.]/g,"")'
+                   onpaste='this.value=this.value.replace(/[^\d.]/g,"")'/></td>
+        <td><input type='hidden' name='item[2_3][key_name]' data-id='2_3' value='颜色:样色 产品规格:1+3+贵 '/></td>
+    </tr>
+    <tr>
+        <td>样色</td>
+        <td>测试</td>
+        <td><input name='item[2_14][price]' class='spec_price' data-id='2_14' value='0'
+                   onkeyup='this.value=this.value.replace(/[^\d.]/g,"")'
+                   onpaste='this.value=this.value.replace(/[^\d.]/g,"")'/></td>
+        <td><input name='item[2_14][store_count]' class='spec_count' data-id='2_14' value='0'
+                   onkeyup='this.value=this.value.replace(/[^\d.]/g,"")'
+                   onpaste='this.value=this.value.replace(/[^\d.]/g,"")'/></td>
+        <td><input type='hidden' name='item[2_14][key_name]' data-id='2_14' value='颜色:样色 产品规格:测试'/></td>
+    </tr>
+</table>
+</body>
+</html>

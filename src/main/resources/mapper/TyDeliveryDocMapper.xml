@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tc.yuxiu.dao.TyDeliveryDocMapper">
+    <!--<resultMap id="BaseResultMap" type="com.tc.yuxiu.model.TyDeliveryDoc">-->
+        <!--<id column="id" jdbcType="INTEGER" property="id"/>-->
+        <!--<result column="order_id" jdbcType="INTEGER" property="orderId"/>-->
+        <!--<result column="order_sn" jdbcType="VARCHAR" property="orderSn"/>-->
+        <!--<result column="user_id" jdbcType="INTEGER" property="userId"/>-->
+        <!--<result column="admin_id" jdbcType="INTEGER" property="adminId"/>-->
+        <!--<result column="consignee" jdbcType="VARCHAR" property="consignee"/>-->
+        <!--<result column="zipcode" jdbcType="VARCHAR" property="zipcode"/>-->
+        <!--<result column="mobile" jdbcType="VARCHAR" property="mobile"/>-->
+        <!--<result column="country" jdbcType="INTEGER" property="country"/>-->
+        <!--<result column="province" jdbcType="INTEGER" property="province"/>-->
+        <!--<result column="city" jdbcType="INTEGER" property="city"/>-->
+        <!--<result column="district" jdbcType="INTEGER" property="district"/>-->
+        <!--<result column="address" jdbcType="VARCHAR" property="address"/>-->
+        <!--<result column="shipping_code" jdbcType="VARCHAR" property="shippingCode"/>-->
+        <!--<result column="shipping_name" jdbcType="VARCHAR" property="shippingName"/>-->
+        <!--<result column="shipping_price" jdbcType="DECIMAL" property="shippingPrice"/>-->
+        <!--<result column="invoice_no" jdbcType="VARCHAR" property="invoiceNo"/>-->
+        <!--<result column="tel" jdbcType="VARCHAR" property="tel"/>-->
+        <!--<result column="best_time" jdbcType="INTEGER" property="bestTime"/>-->
+        <!--<result column="create_time" jdbcType="INTEGER" property="createTime"/>-->
+        <!--<result column="is_del" jdbcType="BIT" property="isDel"/>-->
+        <!--<result column="store_id" jdbcType="INTEGER" property="storeId"/>-->
+        <!--<result column="shipping_pic" jdbcType="VARCHAR" property="shippingPic"/>-->
+        <!--<result column="remarks" jdbcType="VARCHAR" property="remarks"/>-->
+        <!--<result column="note" jdbcType="LONGVARCHAR" property="note"/>-->
+        <!--<result column="shipping_status" jdbcType="VARCHAR" property="shippingCode"/>-->
+    <!--</resultMap>-->
+
+    <!--<select id="selectByParameters" parameterType="map" resultMap="BaseResultMap">-->
+        <!--SELECT-->
+        <!--tdd.id,-->
+        <!--tdd.order_id,-->
+        <!--tdd.order_sn,-->
+        <!--tdd.user_id,-->
+        <!--tdd.admin_id,-->
+        <!--tdd.consignee,-->
+        <!--tdd.zipcode,-->
+        <!--tdd.mobile,-->
+        <!--tdd.country,-->
+        <!--tdd.province,-->
+        <!--tdd.city,-->
+        <!--tdd.district,-->
+        <!--tdd.address,-->
+        <!--tdd.shipping_code,-->
+        <!--tdd.shipping_name,-->
+        <!--tdd.shipping_price,-->
+        <!--tdd.invoice_no,-->
+        <!--tdd.tel,-->
+        <!--tdd.best_time,-->
+        <!--tdd.create_time,-->
+        <!--tdd.is_del,-->
+        <!--tdd.store_id,-->
+        <!--tdd.shipping_pic,-->
+        <!--tdd.remarks,-->
+        <!--tdd.note,-->
+        <!--tor.shipping_status-->
+        <!--FROM-->
+        <!--ty_delivery_doc tdd-->
+        <!--JOIN ty_order tor ON tdd.order_id = tor.order_id-->
+        <!--where 1=1-->
+        <!--<if test="id!=null">-->
+            <!--and tdd.id=#{id,jdbcType=INTEGER}-->
+        <!--</if>-->
+        <!--<if test="storeId!=null">-->
+            <!--and tdd.store_id=#{storeId,jdbcType=INTEGER}-->
+        <!--</if>-->
+        <!--<if test="orderSn!=null">-->
+            <!--and tdd.order_sn=#{orderSn,jdbcType=VARCHAR}-->
+        <!--</if>-->
+        <!--<if test="shippingStatus!=null">-->
+            <!--and tor.shipping_status=#{shippingStatus,jdbcType=BIT}-->
+        <!--</if>-->
+        <!--<if test="start!=null and end!=null">-->
+            <!--and tdd.create_time between #{start,jdbcType=INTEGER} and #{end,jdbcType=INTEGER}-->
+        <!--</if>-->
+    <!--</select>-->
+
+
+</mapper>
